@@ -1,0 +1,2 @@
+Minimal depth: 3
+Minimal path: 52 81 72 
