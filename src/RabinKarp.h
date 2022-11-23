@@ -10,7 +10,7 @@ int getHash(int hash, char letter)
 {
     return (d * hash + letter) % q;;
 }
-void rabinKarp(string pattern, string text)
+int rabinKarp(string pattern, string text)
 {
     int m = pattern.length();
     int n = text.length();
@@ -39,36 +39,5 @@ void rabinKarp(string pattern, string text)
                 rt = (rt + q);
         }
     }
-    cout<<"Pattern occured "<<occur<<" times\n";
-}
-
-int main()
-{
-
-    string textBest = "AVGHDJFKDFJKSLASKHEASFDGHFGDH";
-    string textAvg = "AVGHDJFKDFJKSLASKAVGDFFSKDKFAVG";
-    string textWorst = "AVGAVGAVGAVGAVGAVGAVGAVGAVGAVGAVG";
-    string patternAvg = "AVG";
-
-
-    struct timeval start, end;
-
-    gettimeofday(&start, NULL);
-
-    ios_base::sync_with_stdio(false);
-
-    rabinKarp(patternAvg, textBest);
-
-    gettimeofday(&end, NULL);
-
-    double time_taken;
-
-    time_taken = (end.tv_sec - start.tv_sec) * 1e6;
-    time_taken = (time_taken + (end.tv_usec -
-                                start.tv_usec)) * 1e-6;
-
-    cout << "Time   : " << fixed
-         << time_taken << setprecision(6);
-    cout << " sec" << endl;
-
+    return occur;
 }

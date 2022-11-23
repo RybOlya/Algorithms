@@ -1,22 +1,5 @@
 # Algorithms
-# A chain of words
-## Problem code: WCHAIN
- - Two participants play a linguistic game. At the beginning of the game, a list of N words is given.
-The first player chooses an arbitrary word w1 and crosses out one arbitrary letter from it
-so to get another word w2 from this list. After that, the turn goes to
-another player, and he tries to do the same with the word w2.
- - The game ends in one of two cases:
-• One letter word remains.
-• It is not possible to cross out any letter to get another word from the dictionary.
+## Rabin-Karp Algorithm
+The Rabin-Karp algorithm is a string-searching algorithm that uses hashing to find patterns in strings. A string is an abstract data type that consists of a sequence of characters. Letters, words, sentences, and more can be represented as strings.
 
-### Determine the length of the maximum chain that can be achieved in this game at given words
-## Input data
-The input file wchain .in consists of N + 1 lines.
-• The first line contains N — the number of words in the dictionary, 1 ≤ N ≤ 105
-.
-
-• Each of the following N lines contains a word from 1 to 50 characters long, which
-consists of small Latin letters from a to z.
-## Output data
-The output file wchain .out must contain one number — the length of the maximum
-chain
+String matching is a very important application of computer science. If you’ve ever searched through a document for a particular word, then you have benefitted from string-matching technology. String matching can also be used to detect plagiarism by comparing strings in document AA with strings in document BB.
